@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+/* 移除type=number时原生dom的箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+$primary: #409EFF;
+$error: red
+

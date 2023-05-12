@@ -1,0 +1,258 @@
+export const commonFields = [
+  {
+    type: 'input',
+    component: 'ElInput',
+    path: 'el-input',
+    name: '文本输入',
+    icon: 'icon-input',
+    extend: false,
+    options: {
+      span: 24,
+      isLabelWidth: false,
+      labelWidth: '',
+      labelWidthUnit: 'auto',
+      hideLabel: false,
+      defaultValue: '',
+      placeholder: '请输入',
+      customClass: '',
+      disabled: false,
+      readonly: false,
+      showPassword: false,
+      maxlength: '',
+      showWordLimit: false,
+      inputStyle: '{}',
+      formatter: '',
+      rows: 2,
+      type: 'text',
+      canEdit: true,
+      required: false,
+      requireMessage: ''
+    },
+  },
+  {
+    type: 'radio',
+    component: 'ElRadioGroup',
+    path: 'el-radio-group',
+    name: '单选框组',
+    icon: 'icon-radio',
+    extend: false,
+    options: {
+      span: 24,
+      labelWidth: '',
+      inline: true,
+      customClass: '',
+      defaultValue: '',
+      disabled: false,
+      button: false,
+      textColor: '#ffffff',
+      fill: '#409EFF',
+      change: '',
+      border: false,
+      canEdit: true,
+      component: 'ElRadio', // 单选框样式
+      required: false,
+      requireMessage: '',
+      options: [
+        {
+          label: '选项 1',
+          value: 1,
+        },
+        {
+          label: '选项 2',
+          value: 2,
+        },
+      ],
+    },
+  },
+  {
+    type: 'checkbox',
+    component: 'ElCheckboxGroup',
+    path: 'el-checkbox-group',
+    name: '多选框组',
+    icon: 'icon-checkbox',
+    extend: false,
+    options: {
+      span: 24,
+      isLabelWidth: false,
+      labelWidth: '',
+      defaultValue: [],
+      customClass: '',
+      disabled: false,
+      button: false,
+      textColor: '#ffffff',
+      fill: '#409EFF',
+      min: NaN,
+      max: NaN,
+      canEdit: true,
+      component: 'ElCheckbox',
+      required: false,
+      requireMessage: '',
+      options: [
+        {
+          label: '选项 1',
+          value: 'option 1',
+        },
+        {
+          label: '选项 2',
+          value: 'option 2',
+        },
+      ],
+    },
+  },
+  {
+    type: 'select',
+    component: 'ElSelect',
+    path: 'el-select',
+    name: '下拉选择器',
+    icon: 'icon-select',
+    extend: false,
+    options: {
+      span: 24,
+      isLabelWidth: false,
+      labelWidth: '',
+      defaultValue: '',
+      placeholder: '请选择',
+      customClass: '',
+      disabled: false,
+      filterable: true,
+      clearable: true,
+      multiple: false,
+      multipleLimit: 0,
+      collapseTags: false,
+      collapseTagsTooltip: false,
+      effect: 'light',
+      canEdit: true,
+      component: 'ElOption',
+      required: false,
+      requireMessage: '',
+      options: [
+        {
+          label: '选项 1',
+          value: 'option 1',
+        },
+        {
+          label: '选项 2',
+          value: 'option 2',
+        },
+      ],
+    },
+  },
+  {
+    type: 'cascader',
+    component: 'ElCascader',
+    path: 'el-cascader',
+    name: '级联选择器',
+    icon: 'icon-select',
+    extend: false,
+    options: {
+      span: 24,
+      isLabelWidth: false,
+      labelWidth: '',
+      hideLabel: false,
+      defaultValue: null,
+      placeholder: '请选择',
+      customClass: '',
+      disabled: false,
+      clearable: true,
+      showAllLevels: false,
+      collapseTags: false, // 多选模式下是否折叠Tag
+      collapseTagsTooltip: false, // 当鼠标悬停于折叠标签的文本时，是否显示所有选中的标签。 要使用此属性，collapse-tags属性必须设定为 true
+      separator: '/', // 分隔符
+      filterable: true,
+      filterMethod: '',
+      debounce: 300,
+      beforeFilter: '', //
+      popperClass: '',
+      teleported: true,
+      canEdit: true,
+      tagType: 'info',
+      validateEvent: true,
+      props: '', // 同element-plus
+      required: false,
+      requireMessage: '',
+      options: [
+        {
+          label: '选项 1',
+          value: 'option 1',
+          children: [
+            {
+              label: '选项 1-1',
+              value: 'option 1-1',
+            },
+            {
+              label: '选项 1-2',
+              value: 'option 1-2',
+            },
+          ]
+        },
+        {
+          label: '选项 2',
+          value: 'option 2',
+        },
+      ],
+    },
+  },
+  {
+    type: 'date',
+    component: 'ElDatePicker',
+    path: 'el-date-picker',
+    name: '日期选择器',
+    icon: 'icon-date',
+    extend: false,
+    required: false,
+    requireMessage: '',
+    options: {
+      span: 24,
+      isLabelWidth: false,
+      labelWidth: '',
+      defaultValue: '',
+      placeholder: '请选择',
+      startPlaceholder: '',
+      endPlaceholder: '',
+      rangeSeparator: '-',
+      type: 'date',
+      valueFormat: 'YYYY-MM-DD',
+      format: 'YYYY-MM-DD',
+      clearable: true,
+      disabled: false,
+      editable: false, // 文本框可输入
+      canEdit: true,
+    },
+  },
+  {
+    type: 'time',
+    component: 'ElTimePicker',
+    path: 'el-time-picker',
+    name: '时间选择器',
+    icon: 'icon-time',
+    extend: false,
+    required: false,
+    requireMessage: '',
+    options: {
+      span: 24,
+      isLabelWidth: false,
+      labelWidth: '',
+      placeholder: '请选择',
+      editable: false,
+      canEdit: true,
+    },
+  },
+]
+
+export const layoutFields = [
+  {
+    type: 'col',
+    component: 'ElCol',
+    path: 'el-col',
+    name: '栅格列',
+    icon: '',
+    extend: false,
+    options: {
+      span: 24,
+      height: '60px',
+      slot: ''
+    }
+  }
+]
+
+export const extensionFields = []

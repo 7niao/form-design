@@ -1,0 +1,27 @@
+{
+  "name": "form-design",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@icon-park/vue-next": "^1.4.2",
+    "@vueuse/core": "^9.4.0",
+    "ace-builds": "^1.12.3",
+    "element-plus": "^2.2.19",
+    "vue": "^3.2.37",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.55.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4"
+  }
+}
